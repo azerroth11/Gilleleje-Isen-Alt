@@ -1,0 +1,154 @@
+:root {
+    --main: hsl(27, 65%, 75%);
+    --grey: hsl(0, 0%, 53%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Commons */
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background-color: var(--main);
+    color: #000;
+    transition: all 0.4s;
+}
+
+/* Hero */
+#hero {
+    height: 111vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: var(--grey);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    overflow: hidden;
+}
+
+#hero img {
+    width: 100%;
+    margin-top: -4rem;
+    transform: scale(1.25);
+}
+
+/* Icons */
+i {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+    border: 1px solid var(--main);
+    border-radius: 50%;
+    text-align: center;
+    z-index: 100;
+}
+
+i:hover {
+    cursor: pointer;
+    background-color: var(--main);
+    transition: all 0.4s;
+}
+
+.fa-shopping-basket {
+    left: 1rem;
+}
+
+.fa-map-marker-alt {
+    right: 1rem;
+}
+
+/* Products */
+.products {
+    width: 450px;
+    height: 500px;
+    overflow: scroll;
+    transform: rotate(-90deg) translateY(-105%);
+    transform-origin: right top;
+    scroll-snap-type: y mandatory;
+}
+
+.products > div {
+    width: 375px;
+    height: 450px;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    margin: 2rem 0 5rem 0;
+    text-align: center;
+    line-height: 1.25rem;
+    transform: rotate(90deg);
+    /* transform-origin: right top; */
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+.products img {
+    max-width: 75%;
+}
+
+/* Vores is */
+.voresIs {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    display: grid;
+    gap: 2rem;
+    padding-bottom: 5rem;
+    background-color: var(--main);
+}
+
+.voresIs img {
+    transform: scaleX(-1);
+}
+
+.voresIs p {
+    padding: 2rem;
+}
+
+/* News */
+.news {
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+    padding-bottom: 8rem;
+}
+
+.news img {
+    border-radius: 5px;
+    aspect-ratio: 3/3.5;
+    width: 100%;
+    object-fit: cover;
+}
