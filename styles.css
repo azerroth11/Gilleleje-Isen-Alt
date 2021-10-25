@@ -51,6 +51,7 @@ a {
     background-color: var(--grey);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 #hero img {
@@ -93,12 +94,13 @@ i:hover {
 /* Products */
 .products {
     width: 500px;
-    height: 375px;
+    height: 400px;
     overflow-y: scroll;
     overflow-x: hidden;
     transform: rotate(-90deg) translateY(-125%);
     transform-origin: right top;
     scroll-snap-type: y mandatory;
+    margin: auto;
 }
 
 .products > div {
@@ -124,7 +126,7 @@ i:hover {
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
     display: grid;
     gap: 2rem;
-    margin: 8rem 0 2rem 0;
+    margin: 10rem 0 2rem 0;
     padding-bottom: 5rem;
     background-color: var(--main);
 }
