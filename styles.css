@@ -44,7 +44,7 @@ a {
 
 /* Hero */
 #hero {
-    height: 111vh;
+    min-height: 700px;
     width: 100vw;
     display: grid;
     place-items: center;
@@ -92,28 +92,27 @@ i:hover {
 
 /* Products */
 .products {
-    width: 450px;
-    height: 500px;
-    overflow: scroll;
-    transform: rotate(-90deg) translateY(-105%);
+    width: 500px;
+    height: 375px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-125%);
     transform-origin: right top;
     scroll-snap-type: y mandatory;
 }
 
 .products > div {
     width: 375px;
-    height: 450px;
+    height: 500px;
     padding: 2rem;
     display: grid;
     gap: 1rem;
     place-items: center;
-    margin: 2rem 0 5rem 0;
     text-align: center;
     line-height: 1.25rem;
-    transform: rotate(90deg);
-    /* transform-origin: right top; */
-    overflow: hidden;
+    transform: rotate(90deg) translateY(-10%);
     scroll-snap-align: center;
+    overflow: hidden;
 }
 
 .products img {
@@ -125,12 +124,14 @@ i:hover {
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
     display: grid;
     gap: 2rem;
+    margin: 8rem 0 2rem 0;
     padding-bottom: 5rem;
     background-color: var(--main);
 }
 
 .voresIs img {
     transform: scaleX(-1);
+    width: 100%;
 }
 
 .voresIs p {
