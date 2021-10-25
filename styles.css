@@ -44,7 +44,7 @@ a {
 
 /* Hero */
 #hero {
-    min-height: 700px;
+    min-height: 800px;
     width: 100vw;
     display: grid;
     place-items: center;
@@ -56,6 +56,7 @@ a {
 
 #hero img {
     width: 100%;
+    max-width: 500px;
     margin-top: -4rem;
     transform: scale(1.25);
 }
@@ -97,22 +98,24 @@ i:hover {
     height: 400px;
     overflow-y: scroll;
     overflow-x: hidden;
-    transform: rotate(-90deg) translateY(-125%);
+    transform: rotate(-90deg) translateY(-128%);
     transform-origin: right top;
     scroll-snap-type: y mandatory;
     margin: auto;
+    /* scrollbar-width: none; */
+    scrollbar-color: var(--main);
 }
 
 .products > div {
     width: 375px;
-    height: 500px;
-    padding: 2rem;
+    height: 425px;
+    padding: 0 2rem;
     display: grid;
     gap: 1rem;
     place-items: center;
     text-align: center;
     line-height: 1.25rem;
-    transform: rotate(90deg) translateY(-10%);
+    transform: rotate(90deg) translateY(-14%);
     scroll-snap-align: center;
     overflow: hidden;
 }
